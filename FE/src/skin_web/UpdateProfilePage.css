@@ -1,0 +1,105 @@
+.update-profile-container {
+    max-width: 420px;
+    margin: 56px auto 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #0099ff22;
+    padding: 32px 28px 24px 28px;
+}
+
+.update-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.update-profile-form h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.update-profile-form label {
+    font-weight: 500;
+    color: #004080;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.update-profile-form input,
+.update-profile-form select {
+    padding: 8px 12px;
+    border: 1.5px solid #b2ebf2;
+    border-radius: 7px;
+    font-size: 15px;
+    background: #f8fbff;
+    transition: border 0.2s;
+}
+.update-profile-form input:focus,
+.update-profile-form select:focus {
+    border: 1.5px solid #0099ff;
+    outline: none;
+    background: #e0f7fa;
+}
+
+.update-profile-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.update-profile-btn {
+    background: linear-gradient(90deg, #0099ff 0%, #004080 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0099ff22;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.update-profile-btn:hover {
+    background: linear-gradient(90deg, #007acc 0%, #003366 100%);
+    box-shadow: 0 4px 16px #0099ff33;
+}
+
+.update-profile-btn-outline {
+    background: #fff;
+    color: #0099ff;
+    border: 2px solid #0099ff;
+    font-weight: 600;
+}
+.update-profile-btn-outline:hover {
+    background: #e6f7ff;
+    color: #004080;
+    border-color: #004080;
+}
+
+.update-profile-message {
+    text-align: center;
+    color: #0099ff;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.update-profile-loading {
+    text-align: center;
+    color: #888;
+    margin: 60px 0;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+    .update-profile-container {
+        padding: 12px 2vw 12px 2vw;
+    }
+}

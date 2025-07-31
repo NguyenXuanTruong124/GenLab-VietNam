@@ -1,0 +1,231 @@
+:root {
+  --primary-blue: #2176bd;
+  --primary-blue-dark: #1456a0;
+  --secondary-green: #6cc04a;
+  --accent-yellow: #f7b500;
+  --accent-red: #e74c3c;
+  --accent-red-dark: #c0392b;
+  --background-light: #f6fbff;
+  --background-section: #e3f0ff;
+  --text-main: #183153;
+  --text-title: #2a5ca4;
+  --shadow-main: 0 4px 24px rgba(33, 118, 189, 0.1);
+  --shadow-card: 0 2px 12px rgba(33, 118, 189, 0.13);
+  --radius-main: 18px;
+  --radius-card: 24px;
+  --font-main: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* --- Lớp bọc ngoài cùng của trang --- */
+.page-wrapper {
+  background: var(--background-light);
+  min-height: 100vh;
+  padding: 40px 15px;
+  font-family: var(--font-main);
+}
+
+/* --- Container chính chứa nội dung --- */
+.manager-service-page.redesign {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-main);
+  color: var(--text-main);
+}
+
+.manager-service-page h2 {
+  text-align: center;
+  color: var(--primary-blue);
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* --- Bố cục cho Form và Bảng --- */
+.manager-content {
+  /* Bố cục xếp chồng theo mặc định */
+}
+
+/* --- Form thêm/sửa dịch vụ --- */
+.service-form {
+  background: var(--background-section);
+  border-radius: var(--radius-main);
+  padding: 28px 32px;
+  box-shadow: var(--shadow-card);
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+}
+
+.service-form h3 {
+  color: var(--primary-blue-dark);
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.service-form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  color: var(--text-title);
+  font-weight: 600;
+}
+
+.service-form input,
+.service-form select,
+.service-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c9d7e3;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-main);
+  margin-bottom: 10px;
+  background: #fff;
+  transition: all 0.2s;
+}
+
+.service-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.service-form input:focus,
+.service-form select:focus,
+.service-form textarea:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(33, 118, 189, 0.1);
+  outline: none;
+}
+
+.error-message {
+  color: var(--accent-red);
+  background-color: #fdedec;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0 0 15px 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* --- Các nút trong Form --- */
+.form-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.form-buttons button {
+  flex: 0 1 150px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form-buttons button[type="submit"] {
+  background: var(--primary-blue);
+  color: #fff;
+}
+
+.form-buttons button[type="submit"]:hover {
+  background: var(--primary-blue-dark);
+  transform: translateY(-2px);
+}
+
+.form-buttons button[type="button"] {
+  background: #b0bec5;
+  color: #263238;
+}
+
+.form-buttons button[type="button"]:hover {
+  background: #90a4ae;
+  transform: translateY(-2px);
+}
+
+/* --- Bảng hiển thị dịch vụ --- */
+.service-table-wrapper {
+  overflow-x: auto;
+}
+
+.service-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: var(--radius-main);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.service-table th,
+.service-table td {
+  padding: 16px 14px;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #e3e6f3;
+  vertical-align: middle;
+}
+
+.service-table th {
+  background: var(--background-section);
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+.service-table th.action-header {
+  text-align: center;
+}
+
+.service-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.description-cell {
+  max-width: 350px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* --- Các nút hành động trong Bảng --- */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.action-buttons button {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.action-buttons .edit-btn {
+  background-color: var(--secondary-green);
+}
+
+.action-buttons .edit-btn:hover {
+  background-color: #58a73a;
+}
+
+.action-buttons .delete-btn {
+  background-color: var(--accent-red);
+}
+
+.action-buttons .delete-btn:hover {
+  background-color: var(--accent-red-dark);
+}

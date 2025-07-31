@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BE",
+    "\\BE\\src",
+    "\\BE\\src\\controllers",
+    "\\BE\\src\\views",
+    "\\FE",
+    "\\FE\\src",
+    "\\FE\\src\\component",
+    "\\FE\\src\\pages"
+  ],
+  "SelectedNode": "\\FE\\src\\pages\\FormTesting.jsx",
+  "PreviewInSolutionExplorer": false
+}

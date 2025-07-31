@@ -1,0 +1,129 @@
+.guidepage-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 12px 48px 12px;
+  background: #f6fbff;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+
+.guide-title {
+  text-align: center;
+  color: #2a5ca4;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+
+.guide-section {
+  margin-bottom: 36px;
+}
+
+.guide-section h2 {
+  color: #1456a0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.guide-sample-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+
+.guide-sample-group {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 22px 18px 18px 18px;
+  min-width: 260px;
+  max-width: 320px;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.guide-sample-group:hover {
+  box-shadow: 0 4px 18px rgba(42,92,164,0.10);
+}
+
+.guide-sample-icon {
+  width: 70px;
+  height: 70px;
+  background: #e3f0ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(42,92,164,0.07);
+}
+
+.guide-sample-icon img {
+  width: 44px;
+  height: 44px;
+}
+
+.guide-sample-content h3 {
+  color: #2a5ca4;
+  font-size: 1.13rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.guide-sample-content ul {
+  padding-left: 18px;
+  font-size: 1rem;
+  color: #183153;
+  margin-bottom: 0;
+}
+
+.guide-nipt-box {
+  background: #e3f0ff;
+  border-radius: 14px;
+  padding: 18px 18px;
+  color: #183153;
+  font-size: 1.05rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.guide-contact-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 18px 24px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.guide-contact-box h3 {
+  color: #2a5ca4;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.guide-contact-box a {
+  color: #1456a0;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .guide-sample-groups {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .guide-sample-group {
+    min-width: 180px;
+    max-width: 98vw;
+    padding: 16px 8vw 12px 8vw;
+  }
+}

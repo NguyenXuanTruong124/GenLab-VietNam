@@ -1,0 +1,142 @@
+.signin-container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 36px 28px 32px;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 4px 32px rgba(33, 118, 189, 0.13);
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    color: #183153;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.signin-form label {
+    font-weight: 700;
+    color: #1456a0;
+    margin-bottom: 4px;
+    letter-spacing: 0.2px;
+}
+
+.signin-form input {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1.5px solid #e3f0ff;
+    background: #f6fbff;
+    font-size: 1.07rem;
+    transition: border 0.2s, box-shadow 0.2s;
+    font-family: inherit;
+    color: #183153;
+    margin-bottom: 2px;
+}
+
+.signin-form input:focus {
+    border-color: #2176bd;
+    outline: none;
+    box-shadow: 0 2px 8px #2176bd22;
+}
+
+.signin-form button {
+    padding: 14px 0;
+    background: linear-gradient(135deg, #2176bd 60%, #6cc04a 100%);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px #2176bd22;
+    margin-top: 10px;
+}
+
+.signin-form button:hover {
+    background: linear-gradient(135deg, #1456a0 60%, #6cc04a 100%);
+    transform: scale(1.04);
+}
+
+.switch-auth {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.switch-auth a {
+    color: #2176bd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.switch-auth a:hover {
+    color: #1456a0;
+    text-decoration: underline;
+}
+
+.google-login-container {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.google-login-container > div {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
+
+.forgot-password-link {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.forgot-password-btn {
+    color: #2176bd;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.forgot-password-btn:hover {
+    color: #1456a0;
+    text-decoration: underline;
+}
+
+.error-message {
+    background: #fff0f0;
+    color: #e74c3c;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 6px solid #e74c3c;
+    font-weight: 600;
+    font-size: 1.07rem;
+    box-shadow: 0 2px 8px #e74c3c22;
+}
+.success-message {
+    background: #e6f9e7;
+    color: #2176bd;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 6px solid #6cc04a;
+    font-weight: 600;
+    font-size: 1.07rem;
+    box-shadow: 0 2px 8px #6cc04a22;
+}
+
+@media (max-width: 600px) {
+    .signin-container {
+        padding: 14px 2vw;
+        max-width: 99vw;
+        border-radius: 12px;
+    }
+    .signin-form input {
+        font-size: 0.97rem;
+        border-radius: 8px;
+    }
+    .signin-form button {
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+}
