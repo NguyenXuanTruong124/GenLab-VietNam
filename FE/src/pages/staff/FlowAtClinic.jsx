@@ -61,9 +61,15 @@ function FlowAtClinic() {
         "http://localhost:3001/api/staff/kitnsample",
         { headers: { Authorization: `Bearer ${token}` } }
       );
+<<<<<<< HEAD
       // Chỉ lấy kit của dịch vụ tại cơ sở y tế/hành chính và chưa hoàn tất
       const filtered = res.data.filter(
         d => (d.Service_name === 'Xét nghiệm ADN tại cơ sở y tế' || d.Service_name === 'Hành chính (tại CSYT)') && d.Booking_Status !== 'Hoàn tất'
+=======
+      // Chỉ lấy kit của dịch vụ tại cơ sở y tế/hành chính
+      const filtered = res.data.filter(
+        d => d.Service_name === 'Xét nghiệm ADN tại cơ sở y tế' || d.Service_name === 'Hành chính (tại CSYT)'
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
       );
       setData(filtered);
     } catch (err) { console.error(err); }
@@ -75,7 +81,11 @@ function FlowAtClinic() {
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setBookingOptions(res.data.filter(
+<<<<<<< HEAD
         b => (b.Service_Names?.includes('Xét nghiệm ADN tại cơ sở y tế') || b.Service_Names?.includes('Hành chính (tại CSYT)')) && b.Booking_Status !== 'Hoàn tất'
+=======
+        b => b.Service_Names?.includes('Xét nghiệm ADN tại cơ sở y tế') || b.Service_Names?.includes('Hành chính (tại CSYT)')
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
       ));
     } catch (err) { console.error(err); }
   };
@@ -86,7 +96,11 @@ function FlowAtClinic() {
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setBookings(res.data.filter(
+<<<<<<< HEAD
         b => (b.Service_Names?.includes('Xét nghiệm ADN tại cơ sở y tế') || b.Service_Names?.includes('Hành chính (tại CSYT)'))
+=======
+        b => (b.Service_Names?.includes('Xét nghiệm ADN tại cơ sở y tế') || b.Service_Names?.includes('Hành chính (tại CSYT)')) && b.Booking_Status !== 'Hoàn tất'
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
       ));
     } catch (err) { console.error(err); }
   };

@@ -465,7 +465,10 @@ exports.getBookingsByUserEmail = async (req, res) => {
         b.BookingDate,
         b.Booking_Status,
         tr.Result_PDF_URL,
+<<<<<<< HEAD
         tr.Result AS TestResult,
+=======
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
         b.ReceiveDate,
         b.ReceiveResult,
         b.Shipping_Status,

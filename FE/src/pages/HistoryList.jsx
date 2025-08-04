@@ -73,16 +73,26 @@ const HistoryList = () => {
                   <td>{b.Booking_ID}</td>
                   <td>{new Date(b.BookingDate).toLocaleDateString("vi-VN")}</td>
                   <td
+<<<<<<< HEAD
                     className={`status-cell ${b.Booking_Status === "Đã xác nhận" ||
                       b.Booking_Status === "Hoàn tất"
                       ? "confirmed"
                       : ""
                       }`}
+=======
+                    className={`status-cell ${
+                      b.Booking_Status === "Đã xác nhận" ||
+                      b.Booking_Status === "Hoàn tất"
+                        ? "confirmed"
+                        : ""
+                    }`}
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
                   >
                     {b.Booking_Status}
                   </td>
 
                   <td>
+<<<<<<< HEAD
                     {b.Booking_Status === "Hoàn tất" && (b.TestResult || b.Result_PDF_URL) ? (
                       <div className="result-container">
                         {b.TestResult && (
@@ -99,6 +109,17 @@ const HistoryList = () => {
                           </a>
                         )}
                       </div>
+=======
+                    {b.Booking_Status === "Hoàn tất" && b.Result_PDF_URL ? (
+                      <a
+                        href={`http://localhost:3001${b.Result_PDF_URL}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="download-result-link"
+                      >
+                        Tải Kết Quả (PDF)
+                      </a>
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
                     ) : (
                       "-"
                     )}

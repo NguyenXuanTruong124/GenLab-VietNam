@@ -75,7 +75,11 @@ exports.getAllBookingsWithInfo = async (req, res) => {
         b.Booking_ID, b.BookingDate, b.Booking_Status, b.AppointmentDate, b.AppointmentTime,
         b.ReceiveDate, b.ReceiveResult, b.Shipping_Status, b.Checkin_Status, b.ChekinImage, -- thêm trường này
         i.Name_Information AS CustomerName,
+<<<<<<< HEAD
         acc.Email, acc.UserName, tr.Result_PDF_URL, tr.Result AS TestResult,
+=======
+        acc.Email, acc.UserName, tr.Result_PDF_URL,
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
         ks.Account_ID AS Staff_ID,
         info_staff.Name_Information AS Staff_Name,
         (
@@ -195,7 +199,10 @@ exports.updateBooking = async (req, res) => {
 // --- UPLOAD RESULT PDF ---
 exports.uploadTestResult = async (req, res) => {
   const bookingId = req.params.id;
+<<<<<<< HEAD
   const { testResult } = req.body; // Thêm tham số testResult
+=======
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
 
   if (!req.file) {
     return res.status(400).json({
@@ -203,12 +210,15 @@ exports.uploadTestResult = async (req, res) => {
     });
   }
 
+<<<<<<< HEAD
   if (!testResult) {
     return res.status(400).json({
       message: "Vui lòng điền kết quả quan hệ huyết thống.",
     });
   }
 
+=======
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
   const pdfUrl = `/results/${req.file.filename}`;
   const testDate = new Date().toISOString().slice(0, 10);
 
@@ -220,22 +230,37 @@ exports.uploadTestResult = async (req, res) => {
 
     if (existingResult.length > 0) {
       await db.query(
+<<<<<<< HEAD
         `UPDATE Test_Result SET Result = ?, Result_PDF_URL = ?, Test_Date = ? WHERE Booking_ID = ?`,
         {
           replacements: [testResult, pdfUrl, testDate, bookingId],
+=======
+        `UPDATE Test_Result SET Result_PDF_URL = ?, Test_Date = ? WHERE Booking_ID = ?`,
+        {
+          replacements: [pdfUrl, testDate, bookingId],
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
           type: QueryTypes.UPDATE,
         }
       );
     } else {
+<<<<<<< HEAD
       await db.query(
         `INSERT INTO Test_Result (Test_Date, Result, Result_PDF_URL, Booking_ID) VALUES (?, ?, ?, ?)`,
         {
           replacements: [testDate, testResult, pdfUrl, bookingId],
+=======
+      const defaultResultText = "Kết quả được đính kèm trong file PDF.";
+      await db.query(
+        `INSERT INTO Test_Result (Test_Date, Result, Result_PDF_URL, Booking_ID) VALUES (?, ?, ?, ?)`,
+        {
+          replacements: [testDate, defaultResultText, pdfUrl, bookingId],
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
           type: QueryTypes.INSERT,
         }
       );
     }
 
+<<<<<<< HEAD
     // Lấy trạng thái check-in hiện tại trước khi cập nhật
     const [currentBooking] = await db.query(
       `SELECT Checkin_Status FROM Booking WHERE Booking_ID = ?`,
@@ -245,12 +270,20 @@ exports.uploadTestResult = async (req, res) => {
     await db.query(
       `UPDATE Booking SET Booking_Status = 'Hoàn tất', Checkin_Status = ? WHERE Booking_ID = ?`,
       { replacements: [currentBooking?.Checkin_Status || 'Chưa đến', bookingId], type: QueryTypes.UPDATE }
+=======
+    await db.query(
+      `UPDATE Booking SET Booking_Status = 'Hoàn tất' WHERE Booking_ID = ?`,
+      { replacements: [bookingId], type: QueryTypes.UPDATE }
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
     );
 
     res.json({
       message: "Tải lên kết quả và cập nhật trạng thái thành công.",
       pdfUrl: pdfUrl,
+<<<<<<< HEAD
       testResult: testResult,
+=======
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
     });
   } catch (error) {
     console.error("===== DATABASE ERROR DETAILS =====");

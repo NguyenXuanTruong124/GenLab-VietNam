@@ -87,6 +87,7 @@
   transition: border 0.2s;
 }
 
+<<<<<<< HEAD
 /* Styling đặc biệt cho dropdown kết quả quan hệ huyết thống */
 .sample-form .test-result-select {
   border: 2px solid var(--secondary-green);
@@ -99,6 +100,8 @@
   box-shadow: 0 0 0 3px rgba(108, 192, 74, 0.1);
 }
 
+=======
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
 .sample-form input[type="file"] {
   width: 100%;
   padding: 8px 12px;

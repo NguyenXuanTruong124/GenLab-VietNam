@@ -1,5 +1,9 @@
 .history-list-container {
+<<<<<<< HEAD
   max-width: max-content;
+=======
+  max-width: 900px;
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
   margin: auto;
   padding: 20px;
   font-family: sans-serif;
@@ -80,6 +84,7 @@
   border-color: #0056b3;
 }
 
+<<<<<<< HEAD
 /* NEW: Result container and styling */
 .result-container {
   display: flex;
@@ -95,11 +100,17 @@
   text-align: center;
 }
 
+=======
+/* NEW: Link to download results */
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
 .download-result-link {
   color: #007bff;
   text-decoration: underline;
   font-weight: 500;
+<<<<<<< HEAD
   font-size: 0.9em;
+=======
+>>>>>>> 2d0b93a83c3ad778ee1e508371a19b4c54a78139
 }
 
 .download-result-link:hover {
