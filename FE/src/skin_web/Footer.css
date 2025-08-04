@@ -1,0 +1,93 @@
+﻿:root {
+  --primary-blue: #2176bd;
+  --primary-blue-dark: #1456a0;
+  --secondary-green: #6cc04a;
+  --accent-yellow: #f7b500;
+  --background-light: #f6fbff;
+  --background-section: #e3f0ff;
+  --text-main: #183153;
+  --text-title: #2a5ca4;
+  --shadow-main: 0 4px 24px rgba(33, 118, 189, 0.10);
+  --shadow-card: 0 2px 12px rgba(33, 118, 189, 0.13);
+  --radius-main: 18px;
+  --radius-card: 24px;
+  --font-main: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.footer {
+    background: linear-gradient(90deg, var(--primary-blue-dark) 60%, var(--primary-blue) 100%);
+    color: #fff;
+    font-family: var(--font-main);
+    padding: 48px 0 32px 0;
+    border-radius: var(--radius-main) var(--radius-main) 0 0;
+    box-shadow: var(--shadow-main);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    gap: 24px;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin: 20px;
+    min-width: 220px;
+}
+
+    .footer-section h2.logo {
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: var(--accent-yellow);
+        font-family: var(--font-main);
+        letter-spacing: 1px;
+    }
+
+    .footer-section h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: var(--secondary-green);
+        font-weight: 700;
+    }
+
+    .footer-section p,
+    .footer-section li {
+        font-size: 17px;
+        line-height: 1.7;
+        color: #e3f0ff;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+.social-icons a {
+    color: #fff;
+    margin-right: 14px;
+    font-size: 24px;
+    transition: color 0.2s, transform 0.2s, text-shadow 0.2s;
+    text-shadow: 0 2px 8px #2176bd33;
+    border-radius: 50%;
+    padding: 6px;
+    display: inline-block;
+}
+.social-icons a:hover {
+    color: var(--accent-yellow);
+    background: #fff2;
+    transform: scale(1.18) rotate(-8deg);
+    text-shadow: 0 4px 16px #f7b50099;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 36px;
+    font-size: 15px;
+    color: #e3f0ff;
+    letter-spacing: 0.5px;
+}

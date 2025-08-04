@@ -1,0 +1,41 @@
+/* TermsAndServicesPage.css */
+
+.terms-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 24px;
+  background: #f6fbff;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #183153;
+  line-height: 1.6;
+}
+
+.terms-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 36px;
+  color: #2a5ca4;
+  font-weight: 700;
+}
+
+.terms-section {
+  margin-bottom: 32px;
+}
+
+.terms-section h2 {
+  color: #1456a0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.terms-section ul {
+  padding-left: 20px;
+}
+
+.terms-section ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}

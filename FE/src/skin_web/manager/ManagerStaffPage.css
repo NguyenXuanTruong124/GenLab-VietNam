@@ -1,0 +1,175 @@
+:root {
+  --primary-blue: #2176bd;
+  --primary-blue-dark: #1456a0;
+  --secondary-green: #6cc04a;
+  --accent-yellow: #f7b500;
+  --accent-red: #e74c3c;
+  --accent-red-dark: #c0392b;
+  --background-light: #f6fbff;
+  --background-section: #e3f0ff;
+  --text-main: #183153;
+  --text-title: #2a5ca4;
+  --shadow-main: 0 4px 24px rgba(33, 118, 189, 0.1);
+  --shadow-card: 0 2px 12px rgba(33, 118, 189, 0.13);
+  --radius-main: 18px;
+  --radius-card: 24px;
+  --font-main: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.manager-account-page {
+  /* Giữ nguyên hoặc điều chỉnh cho container trang */
+  max-width: 1200px;
+  margin: 40px auto;
+  background: var(--background-light);
+  padding: 32px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-main);
+  font-family: var(--font-main);
+}
+
+.manager-account-page h2 {
+  /* Giữ nguyên hoặc điều chỉnh cho tiêu đề trang */
+  text-align: center;
+  color: var(--primary-blue);
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+/* Các style khác cho form và bảng (nếu có) giữ nguyên hoặc điều chỉnh */
+.account-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px 24px;
+  margin-bottom: 40px;
+  background: var(--background-section);
+  padding: 28px 32px;
+  border-radius: var(--radius-main);
+  box-shadow: var(--shadow-card);
+}
+
+.account-form label {
+  font-weight: 600;
+  color: var(--text-title);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.account-form input,
+.account-form select {
+  padding: 10px 12px;
+  border: 1px solid #c9d7e3;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  background: #fff;
+  margin-top: 2px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.account-form input:focus,
+.account-form select:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(33, 118, 189, 0.1);
+  outline: none;
+}
+
+.form-buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.account-form button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.account-form button:nth-child(1) {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.account-form button:nth-child(1):hover {
+  background: var(--primary-blue-dark);
+}
+
+.account-form button:nth-child(2) {
+  background: #b0bec5;
+  color: #263238;
+}
+
+.account-form button:nth-child(2):hover {
+  background: #90a4ae;
+}
+
+.account-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: var(--radius-main);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  margin-top: 20px;
+}
+
+.account-table th,
+.account-table td {
+  padding: 16px 14px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #e3e6f3;
+}
+
+.account-table th {
+  background: var(--background-section);
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+.account-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Style cho các nút hành động trong bảng */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.action-buttons button {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: white;
+}
+
+.action-buttons .edit-btn {
+  background-color: var(--secondary-green); /* Màu xanh lá cây */
+}
+
+.action-buttons .edit-btn:hover {
+  background-color: #58a73a;
+}
+
+.action-buttons .status-btn {
+  background-color: var(--accent-red); /* Màu đỏ */
+}
+
+.action-buttons .status-btn:hover {
+  background-color: var(--accent-red-dark);
+}

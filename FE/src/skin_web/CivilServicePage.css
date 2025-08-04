@@ -1,0 +1,94 @@
+.civil-dna-service-container {
+  max-width: 900px;
+  margin: 40px auto 32px auto;
+  background: #f6fbff;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
+  padding: 36px 28px 32px 28px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.service-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2176bd;
+  text-align: center;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2176bd;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.dich-vu-img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.10);
+  margin: 18px auto 18px auto;
+  display: block;
+}
+
+.service-list {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  padding: 18px 24px;
+  margin-bottom: 18px;
+  margin-top: 0;
+  font-size: 1.08rem;
+  color: #183153;
+  list-style: disc inside;
+}
+
+.service-list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.cta-section {
+  background: #e3f0ff;
+  border-radius: 16px;
+  padding: 18px 24px;
+  text-align: center;
+  margin-top: 32px;
+  box-shadow: 0 2px 8px rgba(33, 118, 189, 0.07);
+}
+
+.more-btn {
+  background: linear-gradient(90deg, #2176bd 60%, #6cc04a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #0001;
+  margin-top: 18px;
+}
+
+.more-btn:hover {
+  background: linear-gradient(90deg, #1456a0 60%, #4ecb71 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(33, 118, 189, 0.13);
+}
+
+@media (max-width: 900px) {
+  .civil-dna-service-container {
+    padding: 10px 2vw;
+    max-width: 98vw;
+  }
+  .dich-vu-img {
+    max-width: 98vw;
+  }
+  .service-list {
+    padding: 12px 8vw;
+  }
+}

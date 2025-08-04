@@ -1,0 +1,135 @@
+body {
+  background: #f4f8fc;
+}
+
+.navelpage-container {
+  background: #fff;
+  max-width: 820px;
+  margin: 40px auto 32px auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(44, 62, 80, 0.10);
+  padding: 36px 28px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.navelpage-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2176bd;
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.navelpage-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: #f7fbff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.06);
+  padding: 20px 16px;
+  margin-bottom: 0;
+  transition: box-shadow 0.2s;
+}
+.navelpage-section:hover {
+  box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.13);
+}
+
+.navelpage-step-number {
+  min-width: 40px;
+  min-height: 40px;
+  background: linear-gradient(135deg, #3bb4e5 60%, #6cc04a 100%);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #0001;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.navelpage-section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navelpage-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2176bd;
+  margin-bottom: 4px;
+}
+
+.navelpage-img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 14px auto 8px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.10);
+}
+
+.navelpage-highlight {
+  color: #e94560;
+  font-weight: 700;
+}
+
+.navelpage-should {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.navelpage-shouldnot {
+  color: #e94560;
+  font-weight: 600;
+}
+
+.navelpage-warning {
+  color: #e94560;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.navelpage-tip {
+  color: #2176bd;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.navelpage-section ul,
+.navelpage-section ol {
+  margin-left: 18px;
+  margin-bottom: 0;
+  padding-left: 18px;
+}
+.navelpage-section li {
+  margin-bottom: 4px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .navelpage-container {
+    padding: 10px 2vw;
+    max-width: 98vw;
+  }
+  .navelpage-section {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 4px;
+  }
+  .navelpage-img {
+    max-width: 98vw;
+  }
+  .navelpage-title {
+    font-size: 1.3rem;
+  }
+}

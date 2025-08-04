@@ -1,0 +1,291 @@
+:root {
+  --primary-blue: #2176bd;
+  --primary-blue-dark: #1456a0;
+  --secondary-green: #6cc04a;
+  --accent-yellow: #f7b500;
+  --background-light: #f6fbff;
+  --background-section: #e3f0ff;
+  --text-main: #183153;
+  --text-title: #2a5ca4;
+  --shadow-main: 0 4px 24px rgba(33, 118, 189, 0.1);
+  --shadow-card: 0 2px 12px rgba(33, 118, 189, 0.13);
+  --radius-main: 18px;
+  --radius-card: 24px;
+  --font-main: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* --- Main Container Styling --- */
+.kit-sample-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: var(--background-light);
+  padding: 32px 32px 40px 32px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-main);
+  font-family: var(--font-main);
+  color: var(--text-main);
+}
+
+.kit-sample-container h2 {
+  text-align: center;
+  color: var(--primary-blue);
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* --- Form Styling --- */
+.kit-form {
+  background: var(--background-section);
+  border-radius: var(--radius-main);
+  padding: 28px 32px 20px 32px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-card);
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.05rem;
+}
+
+.kit-form h3 {
+  color: var(--primary-blue-dark);
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.kit-form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  color: var(--text-title);
+  font-weight: 600;
+}
+
+.kit-form input,
+.kit-form select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+.kit-form input:read-only {
+  background-color: #f0f0f0;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.kit-form input:focus,
+.kit-form select:focus {
+  border: 1.5px solid var(--primary-blue);
+  outline: none;
+}
+
+/* --- Button Styling (Unified) --- */
+button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary-blue);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: var(--shadow-main);
+}
+
+button:hover {
+  background: var(--primary-blue-dark);
+}
+
+/* Form Specific Buttons */
+.kit-form .form-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.kit-form .form-buttons button[type="submit"],
+.kit-form .form-buttons button[type="button"] {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Cancel button style */
+.kit-form button[type="button"] {
+  background: #bdbdbd;
+  color: #222;
+}
+
+.kit-form button[type="button"]:hover {
+  background: #757575;
+}
+
+/* --- Table Styling --- */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 32px;
+  background: #fff;
+  border-radius: var(--radius-main);
+  overflow: hidden; /* Ensures rounded corners are visible */
+  box-shadow: var(--shadow-card);
+  table-layout: auto;
+}
+
+th,
+td {
+  padding: 14px 8px;
+  text-align: center;
+  max-width: 160px;
+  word-break: break-word;
+  white-space: pre-line;
+  font-size: 1rem;
+  border-bottom: 1px solid #e3e6f3; /* subtle row separator */
+}
+
+th {
+  background: var(--background-section);
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 1.05rem;
+  border-top: 1px solid #e3e6f3;
+}
+
+/* Zebra striping and hover effect */
+tbody tr:nth-child(even) {
+  background: var(--background-light);
+}
+
+tbody tr:hover {
+  background: #e8eaf6;
+}
+
+/* Remove bottom border from the last row */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+  .kit-sample-container table,
+  .kit-sample-container th,
+  .kit-sample-container td {
+    font-size: 0.93rem;
+    padding: 10px 4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .kit-sample-container {
+    padding: 8px 2vw;
+  }
+  .kit-form {
+    padding: 16px 2vw;
+    max-width: 98vw;
+  }
+  .kit-sample-container table {
+    font-size: 0.9rem;
+    overflow-x: auto;
+    display: block;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.kit-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+  align-items: center;
+  background: #f8fafd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px #e0e7ef;
+  justify-content: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.kit-filter-bar select,
+.kit-filter-bar input[type="date"],
+.kit-filter-bar input[type="text"],
+.kit-filter-bar input[type="search"] {
+  padding: 6px 12px;
+  border: 1px solid #d0d7e2;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fff;
+  min-width: 120px;
+  transition: border 0.2s;
+}
+.kit-filter-bar select:focus,
+.kit-filter-bar input[type="date"]:focus,
+.kit-filter-bar input[type="text"]:focus,
+.kit-filter-bar input[type="search"]:focus {
+  border: 1.5px solid #3b82f6;
+  outline: none;
+}
+.kit-filter-bar input[type="text"],
+.kit-filter-bar input[type="search"] {
+  min-width: 180px;
+}
+.kit-filter-bar button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.kit-filter-bar button:hover {
+  background: #1d4ed8;
+}
+@media (max-width: 900px) {
+  .kit-filter-bar {
+    gap: 10px;
+    padding: 10px;
+  }
+  .kit-filter-bar select,
+  .kit-filter-bar input[type="date"],
+  .kit-filter-bar input[type="text"],
+  .kit-filter-bar input[type="search"] {
+    min-width: 100px;
+    font-size: 14px;
+  }
+  .kit-filter-bar input[type="text"],
+  .kit-filter-bar input[type="search"] {
+    min-width: 120px;
+  }
+  .kit-filter-bar button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .kit-filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .kit-filter-bar select,
+  .kit-filter-bar input[type="date"],
+  .kit-filter-bar input[type="text"],
+  .kit-filter-bar input[type="search"],
+  .kit-filter-bar button {
+    width: 100%;
+    min-width: unset;
+  }
+}

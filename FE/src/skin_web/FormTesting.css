@@ -1,0 +1,160 @@
+/* Booking Form Container */
+.medical-container,
+.home-sampling-container {
+  background: #fff;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(33, 118, 189, 0.13);
+  padding: 44px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #183153;
+}
+
+/* Tiêu đề Form */
+.form-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2176bd;
+  text-align: center;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #2176bd11;
+}
+
+/* Form chính */
+.medical-form,
+.home-sampling-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Label */
+.medical-form label,
+.home-sampling-form label {
+  font-weight: 700;
+  color: #1456a0;
+  margin-bottom: 4px;
+  letter-spacing: 0.2px;
+}
+
+/* Input, select, textarea */
+.medical-form input,
+.medical-form select,
+.medical-form textarea,
+.home-sampling-form input,
+.home-sampling-form select,
+.home-sampling-form textarea {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #e3f0ff;
+  background: #f6fbff;
+  font-size: 1.07rem;
+  transition: border 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  color: #183153;
+  margin-bottom: 2px;
+}
+
+.medical-form input:focus,
+.medical-form select:focus,
+.medical-form textarea:focus,
+.home-sampling-form input:focus,
+.home-sampling-form select:focus,
+.home-sampling-form textarea:focus {
+  border-color: #2176bd;
+  outline: none;
+  box-shadow: 0 2px 8px #2176bd22;
+}
+
+/* Nút submit */
+.medical-form button,
+.home-sampling-form button {
+  background: linear-gradient(135deg, #2176bd 60%, #6cc04a 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 0;
+  cursor: pointer;
+  font-size: 1.15rem;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px #2176bd22;
+  margin-top: 10px;
+}
+
+.medical-form button:hover,
+.home-sampling-form button:hover {
+  background: linear-gradient(135deg, #1456a0 60%, #6cc04a 100%);
+  transform: scale(1.04);
+}
+
+/* Alert box cho AdminFacility */
+.alert-box {
+  background: #e3f0ff;
+  border-left: 5px solid #2176bd;
+  padding: 16px 22px;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  color: #204574;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px #2176bd11;
+}
+
+.alert-box ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.alert-box li {
+  margin-bottom: 8px;
+}
+
+/* Toast override */
+.Toastify__toast {
+  border-radius: 12px !important;
+  font-weight: 600;
+  font-size: 1.07rem;
+  box-shadow: 0 2px 12px #2176bd22 !important;
+}
+.Toastify__toast--success {
+  background: #e6f9e7 !important;
+  color: #2176bd !important;
+  border-left: 6px solid #6cc04a !important;
+}
+.Toastify__toast--error {
+  background: #fff0f0 !important;
+  color: #e74c3c !important;
+  border-left: 6px solid #e74c3c !important;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .medical-container,
+  .home-sampling-container {
+    padding: 14px 2vw;
+    max-width: 99vw;
+    border-radius: 12px;
+  }
+  .form-title {
+    font-size: 1.3rem;
+  }
+  .medical-form input,
+  .medical-form select,
+  .medical-form textarea,
+  .home-sampling-form input,
+  .home-sampling-form select,
+  .home-sampling-form textarea {
+    font-size: 0.97rem;
+    border-radius: 8px;
+  }
+  .medical-form button,
+  .home-sampling-form button {
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+}

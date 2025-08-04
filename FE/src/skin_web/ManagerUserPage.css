@@ -1,0 +1,132 @@
+.user-management-container {
+  background: #fff;
+  max-width: 700px;
+  margin: 40px auto 32px auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(44, 62, 80, 0.10);
+  padding: 36px 28px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.user-management-container h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2176bd;
+  text-align: center;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f7fbff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.06);
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #e3f0ff;
+  padding: 14px 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.user-table th {
+  background: #e3f0ff;
+  color: #2a5ca4;
+  font-weight: 700;
+}
+
+.user-table tr:nth-child(even) td {
+  background: #f6fbff;
+}
+
+.user-table button {
+  background: linear-gradient(135deg, #3bb4e5 60%, #6cc04a 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 18px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.user-table button:hover {
+  background: linear-gradient(135deg, #2176bd 60%, #6cc04a 100%);
+}
+
+.edit-form {
+  background: #f7fbff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.06);
+  padding: 24px 18px;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit-form h3 {
+  color: #2176bd;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.edit-form label {
+  font-weight: 600;
+  color: #204574;
+  margin-bottom: 2px;
+}
+
+.edit-form input, .edit-form select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #e3f0ff;
+  background: #fff;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.edit-form input:focus, .edit-form select:focus {
+  border: 1.5px solid #2176bd;
+  outline: none;
+  box-shadow: 0 2px 8px #2176bd22;
+}
+
+.edit-form button {
+  margin-top: 8px;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .user-management-container {
+    padding: 10px 2vw;
+    max-width: 98vw;
+  }
+  .user-management-container h2 {
+    font-size: 1.3rem;
+  }
+  .user-table th, .user-table td {
+    font-size: 0.95rem;
+    padding: 8px 4px;
+  }
+  .edit-form {
+    padding: 10px 2vw;
+    max-width: 98vw;
+  }
+}

@@ -1,0 +1,181 @@
+.manager-dashboard {
+  min-height: 100vh;
+  background: #f4f7fa;
+}
+.manager-header-redesign {
+  background: #1976d2;
+  color: #fff;
+  padding: 0 0 28px 0;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.1);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.manager-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  min-height: 90px;
+  gap: 12px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.manager-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 340px;
+  flex: 0 0 340px;
+}
+.manager-logo-img {
+  height: 54px;
+  width: 54px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+}
+.manager-header-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.manager-logo-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.manager-logo-family {
+  color: #4dd0e1;
+  margin-left: 2px;
+}
+.manager-slogan {
+  font-size: 0.85rem;
+  color: #e3f2fd;
+  font-weight: 400;
+  margin-top: 2px;
+}
+.manager-header-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.manager-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.manager-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 180px;
+  flex: 0 0 180px;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.manager-nav-redesign {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.manager-btn {
+  background: #fff;
+  color: #1976d2;
+  border: none;
+  border-radius: 24px;
+  padding: 13px 32px;
+  font-size: 1.08rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.manager-btn:hover {
+  background: #1565c0;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.15);
+}
+.manager-main {
+  max-width: max-content;
+  margin: 0px auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 40px 32px;
+  text-align: center;
+}
+.manager-main h3 {
+  margin-bottom: 12px;
+  color: #1976d2;
+  font-size: 1.4rem;
+}
+.manager-main p {
+  color: #333;
+  font-size: 1.1rem;
+}
+@media (max-width: 900px) {
+  .manager-header-flex {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 8px;
+    min-height: unset;
+    position: static;
+  }
+  .manager-header-left,
+  .manager-header-center,
+  .manager-header-right {
+    min-width: unset;
+    flex: unset;
+    justify-content: center;
+    position: static;
+    transform: none;
+    left: unset;
+    top: unset;
+  }
+}
+
+.manager-header {
+  position: relative;
+  /* ...các style cũ... */
+}
+.manager-account {
+  position: absolute;
+  top: 32px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.manager-avatar {
+  width: 32px;
+  height: 32px;
+  background: #e0e0e0;
+  color: #1976d2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.manager-username {
+  color: #e57373;
+  font-weight: 500;
+}
+
+.header-account-menu,
+.account-menu-wrapper {
+  margin-left: auto;
+}

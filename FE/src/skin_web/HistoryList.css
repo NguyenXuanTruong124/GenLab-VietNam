@@ -1,0 +1,129 @@
+.history-list-container {
+  max-width: max-content;
+  margin: auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.history-list-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* --- Bảng lịch sử --- */
+.history-table {
+  width: 100%;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.history-table thead {
+  background-color: #f8f9fa;
+}
+
+/* --- Trạng thái --- */
+.status-cell.confirmed {
+  font-weight: bold;
+  color: #28a745; /* Green color for confirmed status */
+}
+
+/* --- Nút bấm --- */
+.action-button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease;
+
+  /* Căn chỉnh icon và chữ */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Khoảng cách giữa icon và chữ */
+}
+
+.action-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Nút Xem chi tiết */
+.action-button.details-button {
+  background-color: #e9ecef;
+  color: #495057;
+  border-color: #ced4da;
+}
+
+.action-button.details-button:hover {
+  background-color: #d8dde2;
+}
+
+/* Nút Xem & Thanh toán */
+.action-button.pay-button {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.action-button.pay-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* NEW: Result container and styling */
+.result-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.test-result-text {
+  font-weight: 600;
+  color: #28a745;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.download-result-link {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.download-result-link:hover {
+  color: #0056b3;
+}
+
+/* --- Thông báo --- */
+.payment-message {
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.payment-message.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.no-bookings-row td {
+  padding: 20px;
+  text-align: center;
+  color: #6c757d;
+}

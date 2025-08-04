@@ -1,0 +1,58 @@
+﻿/* paymentPage.css - Giao diện hiện đại cho trang thanh toán */
+
+.payment-container {
+    max-width: 420px;
+    margin: 60px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    padding: 36px 32px 32px 32px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+}
+
+    .payment-container h2 {
+        color: #1a237e;
+        margin-bottom: 28px;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+.payment-info {
+    margin-bottom: 18px;
+}
+
+.payment-amount {
+    font-size: 2rem;
+    color: #1976d2;
+    font-weight: 700;
+    margin: 10px 0 18px 0;
+}
+
+.vnpay-btn {
+    background: #1976d2;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 0;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+    .vnpay-btn:hover {
+        background: #0d47a1;
+    }
+
+.payment-container.error {
+    color: #e53935;
+    background: #fff3f3;
+    border: 1px solid #ffcdd2;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 40px;
+}

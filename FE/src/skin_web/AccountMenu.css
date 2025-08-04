@@ -1,0 +1,102 @@
+:root {
+  --primary-blue: #2176bd;
+  --primary-blue-dark: #1456a0;
+  --secondary-green: #6cc04a;
+  --accent-yellow: #f7b500;
+  --background-light: #f6fbff;
+  --background-section: #e3f0ff;
+  --text-main: #183153;
+  --text-title: #2a5ca4;
+  --shadow-main: 0 4px 24px rgba(33, 118, 189, 0.10);
+  --shadow-card: 0 2px 12px rgba(33, 118, 189, 0.13);
+  --radius-main: 18px;
+  --radius-card: 24px;
+  --font-main: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.account-menu-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  font-family: var(--font-main);
+}
+
+.account-menu-trigger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 16px 4px 10px;
+  border-radius: 32px;
+  background: transparent;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: none;
+  border: none;
+  font-family: var(--font-main);
+}
+
+.account-menu-trigger:hover {
+  background: #e6f0fa;
+  box-shadow: 0 2px 8px #2176bd22;
+  transform: scale(1.04);
+}
+
+.account-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 2.5px solid #fff;
+  box-shadow: 0 2px 8px #2176bd33;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.account-avatar:hover {
+  box-shadow: 0 6px 24px #2176bd33;
+  transform: scale(1.08);
+}
+
+.account-username {
+  font-weight: 700;
+  color: var(--accent-yellow);
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  font-family: var(--font-main);
+}
+
+.account-menu-dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #fff;
+  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-main);
+  min-width: 200px;
+  z-index: 9999;
+  padding: 10px 0;
+  animation: fadeInMenu 0.25s;
+  font-family: var(--font-main);
+}
+@keyframes fadeInMenu {
+  from { opacity: 0; transform: translateY(-10px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.account-menu-item {
+  padding: 14px 28px;
+  cursor: pointer;
+  color: var(--primary-blue);
+  font-size: 16px;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  border: none;
+  background: none;
+  text-align: left;
+  border-radius: var(--radius-main);
+  font-family: var(--font-main);
+}
+
+.account-menu-item:hover {
+  background: #e6f0fa;
+  color: var(--secondary-green);
+  transform: scale(1.04);
+} 

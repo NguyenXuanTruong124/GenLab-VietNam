@@ -1,0 +1,127 @@
+/* File: TestingHistory.css */
+
+.testing-history-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.testing-history-container h2 {
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+/* --- Bảng chi tiết --- */
+.details-table {
+  width: 100%;
+  margin-bottom: 25px;
+  border-collapse: collapse;
+}
+
+.details-table th,
+.details-table td {
+  border-bottom: 1px solid #e9ecef;
+  padding: 14px;
+  text-align: left;
+}
+
+.details-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+}
+
+.details-table .text-right {
+  text-align: right;
+}
+
+.details-table .text-center {
+  text-align: center;
+}
+
+/* --- Tổng tiền --- */
+.total-amount {
+  text-align: right;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #343a40;
+}
+
+.total-amount .total-price {
+  color: #d92525;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+/* --- Nút bấm --- */
+.payment-actions {
+  text-align: right;
+}
+
+.payment-button {
+  padding: 12px 28px;
+  font-weight: 600;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+.payment-button:hover {
+  background-color: #0069d9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.payment-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* --- Thông báo --- */
+.payment-message {
+  font-weight: 500;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.payment-message.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.payment-message.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  font-size: 1.1rem;
+}
+
+.general-error {
+  color: #721c24;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+}
